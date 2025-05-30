@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Günün İltifatı</title>
+    <title>Günün Falı</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -40,26 +40,26 @@
         <p id="compliment">Loading...</p>
     </div>
     <script>
-        const compliments = [
-            "Bugün harika görünüyorsun!",
-            "Gülüşün bir güneş gibi etrafı aydınlatıyor.",
-            "Ne kadar da zarif ve düşüncelisin.",
-            "Her zaman pozitif enerjinle fark yaratıyorsun.",
-            "Seninle konuşmak, günümü güzelleştiriyor.",
-            "Yaratıcılığın gerçekten etkileyici!",
-            "Sen her şeyi başarabilecek güçtesin.",
-            "Ne kadar da yardımsever ve iyi bir insansın.",
-            "Gözlerin birer yıldız gibi parlıyor.",
-            "Senin gibi birini tanımak büyük bir şans!"
+        const fortunes = [
+            "Bugün senin için harika bir haberle dolu olacak, pozitif kal!",
+            "Yakın zamanda beklemediğin bir yerden güzel bir fırsat çıkacak.",
+            "Bugün sevdiklerinle geçireceğin zaman sana huzur getirecek.",
+            "Yıldızlar senin adına yeni bir başlangıcın sinyalini veriyor.",
+            "Bu hafta içinde uzun zamandır istediğin bir şey gerçekleşecek.",
+            "Etrafındaki insanlar sana destek olmaya hazır, sadece sor!",
+            "Hayatına yeni bir dost katılabilir, gözlerini açık tut.",
+            "Yakın bir zamanda sana neşe getirecek bir sürprizle karşılaşacaksın.",
+            "Kariyerinde seni mutlu edecek bir gelişme yaşayacaksın.",
+            "Bu ay, hayallerini gerçekleştirmek için büyük bir adım atabilirsin."
         ];
 
-        function getCompliment() {
-            const randomIndex = Math.floor(Math.random() * compliments.length);
-            document.getElementById("compliment").textContent = compliments[randomIndex];
+        function getFortune() {
+            const randomIndex = Math.floor(Math.random() * fortunes.length);
+            document.getElementById("compliment").textContent = fortunes[randomIndex];
         }
 
-        // Display a random compliment on page load
-        window.onload = getCompliment;
+        // Display a random fortune on page load
+        window.onload = getFortune;
     </script>
 </body>
 </html>
