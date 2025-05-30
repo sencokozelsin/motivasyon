@@ -13,20 +13,19 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('https://www.toptal.com/designers/subtlepatterns/patterns/spring-flowers.png') repeat;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Zarif gradient */
             color: #4a4a4a;
             text-align: center;
             overflow: hidden;
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.85);
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             width: 90%;
             max-width: 400px;
-            position: relative;
         }
 
         #compliment {
@@ -49,7 +48,11 @@
     </div>
     <script>
         const fortunes = [
-            // Fal içerikleri burada
+            "Bugün senin için harika bir haberle dolu olacak, pozitif kal!",
+            "Yakın zamanda beklemediğin bir yerden güzel bir fırsat çıkacak.",
+            "Bugün sevdiklerinle geçireceğin zaman sana huzur getirecek.",
+            "Yıldızlar senin adına yeni bir başlangıcın sinyalini veriyor.",
+            // ... diğer fal içerikleri
         ];
 
         function getFortune() {
