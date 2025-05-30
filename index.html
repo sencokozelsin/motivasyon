@@ -26,18 +26,36 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             width: 90%;
             max-width: 400px;
+            position: relative;
+        }
+
+        .illustration {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: auto;
         }
 
         #compliment {
             font-size: 1.4rem;
             line-height: 1.6;
-            margin: 20px 0;
+            margin: 40px 0 20px;
+        }
+
+        .footer {
+            font-size: 0.8rem;
+            color: #6d6d6d;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="https://via.placeholder.com/100" alt="Illustration" class="illustration">
         <p id="compliment">Loading...</p>
+        <div class="footer">Hayatınıza güzellik katan küçük bir dokunuş</div>
     </div>
     <script>
         const fortunes = [
@@ -110,3 +128,4 @@
     </script>
 </body>
 </html>
+
