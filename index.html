@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(to right, #fceff1, #fde2e4);
+            background: url('https://www.toptal.com/designers/subtlepatterns/patterns/spring-flowers.png') repeat;
             color: #4a4a4a;
             text-align: center;
             overflow: hidden;
@@ -27,15 +27,6 @@
             width: 90%;
             max-width: 400px;
             position: relative;
-        }
-
-        .illustration {
-            position: absolute;
-            top: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: auto;
         }
 
         #compliment {
@@ -53,69 +44,12 @@
 </head>
 <body>
     <div class="container">
-        <img src="https://via.placeholder.com/100" alt="Illustration" class="illustration">
         <p id="compliment">Loading...</p>
         <div class="footer">Hayatınıza güzellik katan küçük bir dokunuş</div>
     </div>
     <script>
         const fortunes = [
-            "Bugün senin için harika bir haberle dolu olacak, pozitif kal!",
-            "Yakın zamanda beklemediğin bir yerden güzel bir fırsat çıkacak.",
-            "Bugün sevdiklerinle geçireceğin zaman sana huzur getirecek.",
-            "Yıldızlar senin adına yeni bir başlangıcın sinyalini veriyor.",
-            "Bu hafta içinde uzun zamandır istediğin bir şey gerçekleşecek.",
-            "Etrafındaki insanlar sana destek olmaya hazır, sadece sor!",
-            "Hayatına yeni bir dost katılabilir, gözlerini açık tut.",
-            "Yakın bir zamanda sana neşe getirecek bir sürprizle karşılaşacaksın.",
-            "Kariyerinde seni mutlu edecek bir gelişme yaşayacaksın.",
-            "Bu ay, hayallerini gerçekleştirmek için büyük bir adım atabilirsin.",
-            "Bugün kendine güven, her şey yolunda gidecek!",
-            "Hayallerini süsleyen bir teklif kapında olabilir.",
-            "Aileden birinin desteği seni çok mutlu edecek.",
-            "Güneşli bir sabah kadar huzurlu bir gün seni bekliyor.",
-            "Yakında büyük bir karar alman gerekebilir, iç sesine güven.",
-            "Finansal olarak rahatlama yaşayacağın bir dönemdesin.",
-            "Uzun zamandır görmediğin biri seni arayabilir.",
-            "Sanatsal bir yeteneğin keşfedilmesi an meselesi.",
-            "Bu hafta yeni bir hobi edinmek sana çok iyi gelecek.",
-            "Eski bir dosttan güzel bir haber alacaksın.",
-            "Enerjini yükseltecek biriyle tanışacaksın.",
-            "Şans yıldızın parlıyor, yeni başlangıçlar seni bekliyor.",
-            "Ruhunu besleyecek bir etkinlik yapmalısın, bunun için ideal bir gün!",
-            "Yakın gelecekte hayatına heyecan katacak bir gelişme olacak.",
-            "Kariyerinle ilgili olumlu değişiklikler seni bekliyor.",
-            "Yakın bir zamanda romantik bir sürprizle karşılaşabilirsin.",
-            "Daha önce kaçırdığın bir fırsat tekrar kapına gelebilir.",
-            "Bugün sağlığına odaklanmak için harika bir gün.",
-            "Hedeflerine ulaşmak için doğru yoldasın, kararlı ol!",
-            "İlham dolu bir sohbet seni bekliyor.",
-            "Küçük bir jestle büyük mutluluklar yaşanabilir.",
-            "Sevdiklerinden biri sana büyük bir destek sağlayacak.",
-            "Şans, hiç beklemediğin bir anda seni bulacak.",
-            "Bu hafta hayatında bir dönüm noktası olabilir.",
-            "Sana güç veren bir dosttan güzel bir haber alacaksın.",
-            "Yeni bir macera seni çağırıyor, cesur ol!",
-            "Hayatında bir şeyler hızla iyileşmeye başlayacak.",
-            "Bugün pozitif enerjinle insanları etkileyeceksin.",
-            "Beklenmedik bir yerden bir hediye alabilirsin.",
-            "Geleceğin için yapacağın planlar seni heyecanlandıracak.",
-            "Etrafındaki güzellikleri fark et, bugün çok özel bir gün!",
-            "İçindeki yaratıcılığı keşfetmek için ideal bir zaman.",
-            "Yakın zamanda çok sevineceğin bir haber alacaksın.",
-            "Küçük bir iyilik, bugün sana büyük bir geri dönüş sağlayabilir.",
-            "Hedeflerin için doğru yoldasın, asla vazgeçme!",
-            "Bugün seni mutlu edecek küçük mucizelere açık ol.",
-            "Bir hayalin gerçeğe dönüşmesi çok yakında.",
-            "Yeni bir başlangıç için cesaretini topla, evren seni destekliyor.",
-            "Şansın açık, yeni fırsatlar ayağına gelecek.",
-            "İç huzurunu bulacağın bir gün seni bekliyor.",
-            "Bugün çevrendeki insanlara pozitif enerji yayacaksın.",
-            "Küçük adımlar atarak büyük başarılar elde edeceksin.",
-            "Sana iyi hissettirecek biriyle derin bir konuşma yapacaksın.",
-            "Geçmişteki bir sorunun çözümü aniden karşına çıkabilir.",
-            "Bugün seni neşelendirecek bir gelişme olacak.",
-            "Doğru zamanda doğru yerde olmanın ödülünü alacaksın.",
-            "Sevdiğin bir ortamda huzur bulacaksın."
+            // Fal içerikleri burada
         ];
 
         function getFortune() {
@@ -123,9 +57,8 @@
             document.getElementById("compliment").textContent = fortunes[randomIndex];
         }
 
-        // Display a random fortune on page load
+        // Sayfa yüklendiğinde rastgele fal göster
         window.onload = getFortune;
     </script>
 </body>
 </html>
-
