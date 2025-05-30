@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günün İltifatı</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #fceff1, #fde2e4);
+            color: #4a4a4a;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        button {
+            background: #f8a5c2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #f78fb3;
+            transform: translateY(-2px);
+        }
+
+        #compliment {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .flower {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            opacity: 0.7;
+        }
+
+        .flower:nth-child(1) {
+            top: 5%;
+            left: 10%;
+        }
+
+        .flower:nth-child(2) {
+            top: 15%;
+            right: 5%;
+        }
+
+        .flower:nth-child(3) {
+            bottom: 10%;
+            left: 20%;
+        }
+
+        .flower:nth-child(4) {
+            bottom: 5%;
+            right: 15%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.imgur.com/Z7lJkCV.png" alt="Flower" class="flower">
+    <img src="https://i.imgur.com/Z7lJkCV.png" alt="Flower" class="flower">
+    <img src="https://i.imgur.com/Z7lJkCV.png" alt="Flower" class="flower">
+    <img src="https://i.imgur.com/Z7lJkCV.png" alt="Flower" class="flower">
+    <div class="container">
+        <p id="compliment">Loading...</p>
+        <button onclick="getCompliment()">İltifatı Yenile</button>
+    </div>
+    <script>
+        const compliments = [
+            "Bugün harika görünüyorsun!",
+            "Gülüşün bir güneş gibi etrafı aydınlatıyor.",
+            "Ne kadar da zarif ve düşüncelisin.",
+            "Her zaman pozitif enerjinle fark yaratıyorsun.",
+            "Seninle konuşmak, günümü güzelleştiriyor.",
+            "Yaratıcılığın gerçekten etkileyici!",
+            "Sen her şeyi başarabilecek güçtesin.",
+            "Ne kadar da yardımsever ve iyi bir insansın.",
+            "Gözlerin birer yıldız gibi parlıyor.",
+            "Senin gibi birini tanımak büyük bir şans!"
+        ];
+
+        function getCompliment() {
+            const randomIndex = Math.floor(Math.random() * compliments.length);
+            document.getElementById("compliment").textContent = compliments[randomIndex];
+        }
+
+        // Display a random compliment on page load
+        window.onload = getCompliment;
+    </script>
+</body>
+</html>
