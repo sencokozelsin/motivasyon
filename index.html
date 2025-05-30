@@ -28,66 +28,16 @@
             max-width: 400px;
         }
 
-        button {
-            background: #f8a5c2;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 25px;
-            cursor: pointer;
-            margin-top: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s;
-        }
-
-        button:hover {
-            background: #f78fb3;
-            transform: translateY(-2px);
-        }
-
         #compliment {
             font-size: 1.4rem;
             line-height: 1.6;
             margin: 20px 0;
         }
-
-        .flower {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            opacity: 0.7;
-        }
-
-        .flower:nth-child(1) {
-            top: 5%;
-            left: 10%;
-        }
-
-        .flower:nth-child(2) {
-            top: 15%;
-            right: 5%;
-        }
-
-        .flower:nth-child(3) {
-            bottom: 10%;
-            left: 20%;
-        }
-
-        .flower:nth-child(4) {
-            bottom: 5%;
-            right: 15%;
-        }
     </style>
 </head>
 <body>
-    <img src="https://i.imgur.com/Z7lJkCV.png" alt="Flower" class="flower">
-    <img src="https://i.imgur.com/Z7lJkCV.png" alt="Flower" class="flower">
-    <img src="https://i.imgur.com/Z7lJkCV.png" alt="Flower" class="flower">
-    <img src="https://i.imgur.com/Z7lJkCV.png" alt="Flower" class="flower">
     <div class="container">
         <p id="compliment">Loading...</p>
-        <button onclick="getCompliment()">İltifatı Yenile</button>
     </div>
     <script>
         const compliments = [
@@ -103,6 +53,10 @@
             "Senin gibi birini tanımak büyük bir şans!"
         ];
 
+        function getCompliment() {
+            const randomIndex = Math.floor(Math.random() * compliments.length);
+            document.getElementById("compliment").textContent = compliments[randomIndex];
+        }
 
         // Display a random compliment on page load
         window.onload = getCompliment;
